@@ -8,12 +8,11 @@ namespace dotnet_api_test
         [Key]
         [Required]
         public int Id { get; set; }
+
+        [Required] public string Name { get; set; } = "";
         
         [Required]
-        public string Name { get; set; }
-        
-        [Required]
-        public string MadeBy { get; set; }
+        public string MadeBy { get; set; } = "";
         
         [Required]
         public double Cost { get; set; }

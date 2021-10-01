@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
 namespace dotnet_api_test.Persistence
@@ -9,6 +10,6 @@ namespace dotnet_api_test.Persistence
             
         }
 
-        public DbSet<Dish> Platforms { get; set; }
+        public DbSet<Dish> Dishes { get; set; }
     }
 }
