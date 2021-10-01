@@ -1,0 +1,14 @@
+using AutoMapper;
+using dotnet_api_test.Models.Dtos;
+
+namespace dotnet_api_test.Mapping
+{
+    public class DishProfile : Profile
+    {
+        public DishProfile()
+        {
+            CreateMap<Dish, ReadDishDto>();
+            CreateMap<CreateDishDto, Dish>();
+        }
+    }
+}

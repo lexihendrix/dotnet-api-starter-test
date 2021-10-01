@@ -1,15 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "QnK6UeLwEh29666l6MeOMbF/urOs9dCE/QVf6meF00x4W+4r6SYb2GuLUctm8Pd3lDhAvMD6FnJu515ZOVZ4Ug==",
+  "dgSpecHash": "PE3ecF2BUneYV+Sw6BDuHOfsmlAZcwICNQ2B5gxIGLRIx2z5vhUKwqsRtGU0XIZ7Xlvf8rNTJV3itFkI0NYwug==",
   "success": true,
   "projectFilePath": "/Users/danielpersson/Insync/persson.daniel.1990@gmail.com/Google Drive/FrontEdgeIT/educationprogram/dotnet-api-test/dotnet-api-test.csproj",
   "expectedPackageFiles": [
+    "/Users/danielpersson/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/Users/danielpersson/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "/Users/danielpersson/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/danielpersson/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/danielpersson/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.0.0/microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "/Users/danielpersson/.nuget/packages/microsoft.extensions.options/3.0.0/microsoft.extensions.options.3.0.0.nupkg.sha512",
+    "/Users/danielpersson/.nuget/packages/microsoft.extensions.primitives/3.0.0/microsoft.extensions.primitives.3.0.0.nupkg.sha512",
     "/Users/danielpersson/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/danielpersson/.nuget/packages/swashbuckle.aspnetcore/6.1.5/swashbuckle.aspnetcore.6.1.5.nupkg.sha512",
     "/Users/danielpersson/.nuget/packages/swashbuckle.aspnetcore.swagger/6.1.5/swashbuckle.aspnetcore.swagger.6.1.5.nupkg.sha512",
     "/Users/danielpersson/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.1.5/swashbuckle.aspnetcore.swaggergen.6.1.5.nupkg.sha512",
-    "/Users/danielpersson/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.1.5/swashbuckle.aspnetcore.swaggerui.6.1.5.nupkg.sha512"
+    "/Users/danielpersson/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.1.5/swashbuckle.aspnetcore.swaggerui.6.1.5.nupkg.sha512",
+    "/Users/danielpersson/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
