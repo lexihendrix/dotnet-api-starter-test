@@ -1,5 +1,7 @@
 using System;
+using dotnet_api_test.Persistence;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
@@ -15,6 +17,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("DishDb"));
 
 var app = builder.Build();
 
