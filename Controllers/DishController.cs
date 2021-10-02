@@ -1,4 +1,5 @@
 using AutoMapper;
+using dotnet_api_test.Models.Dtos;
 using dotnet_api_test.Persistence.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -22,28 +23,28 @@ namespace dotnet_api_test.Controllers
 
         [HttpGet]
         [Route("")] 
-        public ActionResult GetDishes()
+        public ActionResult<DishesAndAveragePriceDto> GetDishesAndAverageDishPrice()
         {
             return Ok();
         }
-        
+
         [HttpGet]
         [Route("{id}")] 
-        public ActionResult GetDishById(int id)
+        public ActionResult<ReadDishDto> GetDishById(int id)
         {
             return Ok();
         }
         
         [HttpPost]
         [Route("")] 
-        public ActionResult CreateDish()
+        public ActionResult<ReadDishDto> CreateDish([FromBody] CreateDishDto createDishDto)
         {
             return Ok();
         }
         
         [HttpPut]
         [Route("{id}")] 
-        public ActionResult UpdateDishById(int id)
+        public ActionResult<ReadDishDto> UpdateDishById(int id, UpdateDishDto updateDishDto)
         {
             return Ok();
         }
