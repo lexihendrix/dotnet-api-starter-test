@@ -1,5 +1,7 @@
 using System;
 using dotnet_api_test.Persistence;
+using dotnet_api_test.Persistence.Repositories;
+using dotnet_api_test.Persistence.Repositories.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +20,7 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("DishDb"));
+builder.Services.AddScoped<IDishRepository, DishRepository>();
 
 var app = builder.Build();
 
