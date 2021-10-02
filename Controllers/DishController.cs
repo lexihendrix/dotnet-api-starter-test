@@ -27,6 +27,13 @@ namespace dotnet_api_test.Controllers
             return Ok();
         }
         
+        [HttpGet]
+        [Route("{id}")] 
+        public ActionResult GetDishById(int id)
+        {
+            return Ok();
+        }
+        
         [HttpPost]
         [Route("")] 
         public ActionResult CreateDish()
@@ -36,21 +43,14 @@ namespace dotnet_api_test.Controllers
         
         [HttpPut]
         [Route("{id}")] 
-        public ActionResult UpdateDish(int id)
+        public ActionResult UpdateDishById(int id)
         {
             return Ok();
         }
-        
-        [HttpPatch]
-        [Route("{id}")] 
-        public ActionResult PatchUpdateDish(int id)
-        {
-            return Ok();
-        }
-        
+
         [HttpDelete]
         [Route("{id}")] 
-        public ActionResult DeleteDish(int id)
+        public ActionResult DeleteDishById(int id)
         {
             return Ok();
         }
