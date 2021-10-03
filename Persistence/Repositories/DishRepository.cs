@@ -37,7 +37,7 @@ namespace dotnet_api_test.Persistence.Repositories
             throw new System.NotImplementedException();
         }
 
-        public Dish UpdateDish(Dish dish)
+        public Dish UpdateDishById(Dish dish)
         {
             throw new System.NotImplementedException();
         }

@@ -9,6 +9,6 @@ namespace dotnet_api_test.Persistence.Repositories.Interfaces
         Dish GetDishById(int Id);
         void DeleteDishById();
         Dish CreateDish(Dish dish);
-        Dish UpdateDish(Dish dish);
+        Dish UpdateDishById(Dish dish);
     }
 }
