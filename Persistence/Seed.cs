@@ -10,7 +10,11 @@ namespace dotnet_api_test.Persistence
         public static void PopulateDb(IApplicationBuilder app)
         {
             using var serviceScope = app.ApplicationServices.CreateScope();
-            SeedData(serviceScope.ServiceProvider.GetService<AppDbContext>());
+            var context = serviceScope.ServiceProvider.GetService<AppDbContext>();
+            if (context != null)
+            {
+                SeedData(serviceScope.ServiceProvider.GetService<AppDbContext>() ?? throw new InvalidOperationException());
+            }
         }
         
         private static void SeedData(AppDbContext context)

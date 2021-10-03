@@ -10,6 +10,6 @@ namespace dotnet_api_test.Persistence
             
         }
 
-        public DbSet<Dish> Dishes { get; set; }
+        public DbSet<Dish> Dishes { get; set; } = null!;
     }
 }

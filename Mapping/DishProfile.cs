@@ -9,6 +9,7 @@ namespace dotnet_api_test.Mapping
         {
             CreateMap<Dish, ReadDishDto>();
             CreateMap<CreateDishDto, Dish>();
+            CreateMap<ReadDishDto, Dish>();
         }
     }
 }
