@@ -4,8 +4,8 @@ namespace dotnet_api_test.Models.Dtos
 {
     public class DishesAndAveragePriceDto
     {
-        public IEnumerable<ReadDishDto> Dishes { get; set; }
-        public double AveragePrice { get; set; }
+        public IEnumerable<ReadDishDto> Dishes { get; init; }
+        public double? AveragePrice { get; init; }
 
         public DishesAndAveragePriceDto()
         {

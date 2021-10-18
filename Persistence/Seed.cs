@@ -21,7 +21,7 @@ namespace dotnet_api_test.Persistence
         {
             if (!context.Dishes.Any())
             {
-                Console.WriteLine("--> Seeding data...");
+                Console.WriteLine("Seeding data...");
                 
                 context.Dishes.AddRange(
                     new Dish { Name = "Pancakes", MadeBy = "John Doe", Cost = 12},
@@ -34,7 +34,7 @@ namespace dotnet_api_test.Persistence
             }
             else
             {
-                Console.WriteLine("--> We already have data.");
+                Console.WriteLine("Data already exist");
             }
         }
     }

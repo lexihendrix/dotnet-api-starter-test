@@ -1,4 +1,5 @@
 using System;
+using dotnet_api_test.Exceptions;
 using dotnet_api_test.Persistence;
 using dotnet_api_test.Persistence.Repositories;
 using dotnet_api_test.Persistence.Repositories.Interfaces;
@@ -6,15 +7,15 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
-builder.Services.AddControllers();
+builder.Services.AddControllers(opt => opt.Filters.Add(new ExceptionFilter()));
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new() { Title = "dotnet_api_test", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "dotnet_api_test", Version = "v1" });
 });
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
