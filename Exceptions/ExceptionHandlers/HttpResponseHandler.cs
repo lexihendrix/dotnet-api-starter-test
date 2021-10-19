@@ -6,7 +6,7 @@ namespace dotnet_api_test.Exceptions.ExceptionHandlers
     {
         public static ExceptionResponse Respond(HttpExceptionResponse e)
         {
-            return new ExceptionResponse(e.StatusCode, e.Message, "HttpResponseException");
+            return new(e.StatusCode, e.Message, "HttpResponseException");
         }
     }
 }

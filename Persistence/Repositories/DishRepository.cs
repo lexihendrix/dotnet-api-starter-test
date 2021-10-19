@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using dotnet_api_test.Persistence.Repositories.Interfaces;
 
 namespace dotnet_api_test.Persistence.Repositories
@@ -11,7 +10,7 @@ namespace dotnet_api_test.Persistence.Repositories
         {
             _context = context;
         }
-        
+
         void IDishRepository.SaveChanges()
         {
             throw new System.NotImplementedException();

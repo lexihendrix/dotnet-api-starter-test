@@ -1,4 +1,3 @@
-using AutoMapper;
 using dotnet_api_test.Models.Dtos;
 
 namespace dotnet_api_test.Mapping

@@ -1,8 +1,5 @@
-using System;
 using dotnet_api_test.Exceptions.ExceptionHandlers;
 using dotnet_api_test.Exceptions.ExceptionResponses;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace dotnet_api_test.Exceptions
 {
@@ -12,7 +9,7 @@ namespace dotnet_api_test.Exceptions
         {
             var exception = context.Exception;
             ExceptionResponse response;
-            
+
             switch (exception)
             {
                 case HttpExceptionResponse e:
@@ -26,11 +23,11 @@ namespace dotnet_api_test.Exceptions
                     response = DefaultExceptionResponse();
                     break;
             }
-            
+
             context.ExceptionHandled = true;
             context.Result = response.CreateObjectResult();
         }
-        
+
         /**
          * The default fallback exception.
          */
