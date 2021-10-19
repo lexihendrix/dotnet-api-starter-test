@@ -25,9 +25,9 @@ Usually a api such as this is divided into several separate projects with differ
 * To check if you successfully installed dotnet ef tools run `dotnet ef`.
 
 ## When done
-* Create a Pull Request with your solution from your forked Repo into the original repo.
+* Either link you solution or zip it and send it to [fredrik.lunde@frontedgeit.se](mailto:fredrik.lunde@frontedgeit.se).
 * We will then review your pull request.
-* If there are any questions, feel free to contact [fredrik.lunde@frontedgeit.se](mailto:fredrik.lunde@frontedgeit.se)
+* If there are any questions, feel free to contact [fredrik.lunde@frontedgeit.se](mailto:fredrik.lunde@frontedgeit.se).
 
 ## Advice
 * In order to test your api successfully, use a tool such as [postman](https://www.postman.com/) or [insomnia](https://insomnia.rest/).
