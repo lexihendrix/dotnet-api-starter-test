@@ -17,6 +17,7 @@ Usually a api such as this is divided into several separate projects with differ
 * Async Await is not needed since we are using an inmemory database.
 * Use the dish repository to communicate with the inmemory database and call these methods from the controller.
 * Use the model validation if needed.
+* The logger can be used to log information during requests in the terminal. Read more: [Link](https://docs.microsoft.com/en-us/dotnet/core/extensions/logging?tabs=command-line)
 
 ## Get started
 * Fork and clone the repo.
@@ -52,12 +53,15 @@ Usually a api such as this is divided into several separate projects with differ
 * You have used mapping correctly.
 * All api method connected to the dishes are implemented correctly and work as expected.
 * Model validation have been used.
+* Logger have been used where suitable.
+* Own initiatives are allowed, but should not be prioritized over fulfilling the instructions. 
 
 ## When are you finished?
 * All required methods are implemented.
 * You think you have handled all edge cases and used exceptions if needed.
 * You feel that your code is as structured, clean and reusable as you can achieve.
 * You have used mapping in way you think is correct.
+* Target framework is .NET 6.0 so make sure to have .NET 6.0 SDK installed.
 
 ## Scripts to be used
 
