@@ -56,6 +56,10 @@ Usually a api such as this is divided into several separate projects with differ
 * Logger have been used where suitable.
 * Own initiatives are allowed, but should not be prioritized over fulfilling the instructions. 
 
+## Bonus
+* Add business rule in order to not allow a price raise by more than 20% and cast appropriate exception if done.
+* Add business rule in order to disallow saving dishes with the same and name and cast appropriate exception if done.
+
 ## When are you finished?
 * All required methods are implemented.
 * You think you have handled all edge cases and used exceptions if needed.
