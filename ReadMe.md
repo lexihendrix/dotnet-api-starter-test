@@ -26,9 +26,9 @@ Usually a api such as this is divided into several separate projects with differ
 * To check if you successfully installed dotnet ef tools run `dotnet ef`.
 
 ## When done
-* Either link you solution or zip it and send it to [fredrik.lunde@frontedgeit.se](mailto:fredrik.lunde@frontedgeit.se).
+* Either link you solution or zip it and send it to [daniel.persson@frontedgeit.se](mailto:daniel.persson@frontedgeit.se) and [mikael.sampson@frontedgeit.se](mikael.sampson@frontedgeit.se).
 * We will then review your pull request.
-* If there are any questions, feel free to contact [fredrik.lunde@frontedgeit.se](mailto:fredrik.lunde@frontedgeit.se).
+* If there are any questions, feel free to contact [daniel.persson@frontedgeit.se](mailto:daniel.persson@frontedgeit.se) or [mikael.sampson@frontedgeit.se](mikael.sampson@frontedgeit.se).
 
 ## Advice
 * In order to test your api successfully, use a tool such as [postman](https://www.postman.com/) or [insomnia](https://insomnia.rest/).
